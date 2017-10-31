@@ -12,6 +12,7 @@ export default sandboxOf(InfoSummaryComponent, {
         template: `
             <app-info-summary [user]="user"></app-info-summary>
         `,
+        // Provide sample input data
         context: {
             user: {
                 username: 'mario',

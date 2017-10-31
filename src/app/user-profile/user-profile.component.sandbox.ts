@@ -9,6 +9,7 @@ import 'rxjs/add/observable/of';
 import { Observable } from 'rxjs/Observable';
 
 class MockUserService {
+    // Mock out any method that gets called on ngOnInit()
     getUser(id: number): Observable<IUser> {
         return Observable.of({
             username: 'waluigi',
@@ -21,11 +22,14 @@ class MockUserService {
 }
 
 export default sandboxOf(UserProfileComponent, {
+    // Form module needed for child components
     imports: [ ReactiveFormsModule ],
+    // Dependent components
     declarations: [
         InfoSummaryComponent,
         DetailsFormComponent
     ],
+    // Provide mock instead of actual service
     providers: [
         { provide: UserService, useClass: MockUserService }
     ]
