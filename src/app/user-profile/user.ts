@@ -3,4 +3,5 @@ export interface IUser {
     email: string;
     twitter: string;
     bio: string;
+    editable: boolean;
 }

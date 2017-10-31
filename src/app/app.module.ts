@@ -1,3 +1,4 @@
+import { UserService } from './user-profile/user.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -18,7 +19,7 @@ import { InfoSummaryComponent } from './user-profile/info-summary/info-summary.c
     DetailsFormComponent,
     InfoSummaryComponent
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

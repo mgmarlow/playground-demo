@@ -4,7 +4,7 @@ import { sandboxOf } from 'angular-playground/dist';
 import { DetailsFormComponent } from './details-form.component';
 
 export default sandboxOf(DetailsFormComponent, {
-    imports: [ReactiveFormsModule]
+    imports: [ ReactiveFormsModule ]
 })
     .add('Default', {
         template: `<app-details-form></app-details-form>`
