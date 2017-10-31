@@ -1,3 +1,4 @@
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -7,14 +8,15 @@ import { DetailsFormComponent } from './user-profile/details-form/details-form.c
 import { InfoSummaryComponent } from './user-profile/info-summary/info-summary.component';
 
 @NgModule({
+  imports: [
+    BrowserModule,
+    ReactiveFormsModule
+  ],
   declarations: [
     AppComponent,
     UserProfileComponent,
     DetailsFormComponent,
     InfoSummaryComponent
-  ],
-  imports: [
-    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

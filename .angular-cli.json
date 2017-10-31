@@ -19,6 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "styles.css"
       ],
       "scripts": [],
@@ -40,6 +41,9 @@
       "main": "main.playground.ts",
       "polyfills": "polyfills.ts",
       "tsconfig": "tsconfig.app.json",
+      "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
