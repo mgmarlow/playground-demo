@@ -42,7 +42,8 @@
       "polyfills": "polyfills.ts",
       "tsconfig": "tsconfig.app.json",
       "styles": [
-        "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "styles.css"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
